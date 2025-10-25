@@ -123,21 +123,6 @@ Les logs sont stockés dans:
 Format: Timestamp + message texte avec valeurs détectées
 
 
-## 🚀 Cas d'Usage
-
-### 1. Audit de Conformité
-Vérifier que les politiques Kerberos respectent les standards NIST/CIS.
-
-### 2. Migration vers AES
-Valider que DES et RC4 sont désactivés avant la fin de vie RC4 (2025).
-
-### 3. Troubleshooting Authentification
-Identifier les mauvaises configurations (clock skew excessif, tickets expirés trop vite).
-
-### 4. Hardening Domaine AD
-Appliquer les recommandations pour renforcer la sécurité Kerberos.
-
-
 # 🚀 Via GPO: Computer Config > Policies > Windows Settings > Security Settings >
 
 # 🚀 Local Policies > Security Options > Network security: Configure encryption types
@@ -157,6 +142,21 @@ Appliquer les recommandations pour renforcer la sécurité Kerberos.
 # 🚀 - Désactive RC4, DES, NTLM
 
 # 🚀 - Limite durée de vie TGT à 4 heures (non-renouvelable)
+
+## 🚀 Cas d'Usage
+
+### 1. Audit de Conformité
+Vérifier que les politiques Kerberos respectent les standards NIST/CIS.
+
+### 2. Migration vers AES
+Valider que DES et RC4 sont désactivés avant la fin de vie RC4 (2025).
+
+### 3. Troubleshooting Authentification
+Identifier les mauvaises configurations (clock skew excessif, tickets expirés trop vite).
+
+### 4. Hardening Domaine AD
+Appliquer les recommandations pour renforcer la sécurité Kerberos.
+
 
 ## Interprétation des Résultats
 
@@ -307,6 +307,14 @@ Event Log Kerberos       | 3 erreur(s) recente(s)   | 0 erreurs        | Avertis
 
 Pour questions ou support: contact@ayinedjimi-consultants.com
 
+
+- --
+
+<div align="center">
+
+**⭐ Si ce projet vous plaît, n'oubliez pas de lui donner une étoile ! ⭐**
+
+</div>
 
 - --
 
