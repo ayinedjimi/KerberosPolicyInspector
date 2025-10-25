@@ -138,6 +138,26 @@ Identifier les mauvaises configurations (clock skew excessif, tickets expirés t
 Appliquer les recommandations pour renforcer la sécurité Kerberos.
 
 
+# 🚀 Via GPO: Computer Config > Policies > Windows Settings > Security Settings >
+
+# 🚀 Local Policies > Security Options > Network security: Configure encryption types
+
+# 🚀 Décocher: DES_CBC_CRC, DES_CBC_MD5
+
+# 🚀 Via registre (si GPO impossible):
+
+# 🚀 0x18 = 0x08 (AES128) + 0x10 (AES256)
+
+# 🚀 Via GPO:
+
+# 🚀 Ajouter comptes sensibles au groupe Protected Users:
+
+# 🚀 - Force AES256
+
+# 🚀 - Désactive RC4, DES, NTLM
+
+# 🚀 - Limite durée de vie TGT à 4 heures (non-renouvelable)
+
 ## Interprétation des Résultats
 
 ### Niveaux de Sécurité
@@ -194,26 +214,6 @@ Information contextuelle sans impact sécurité direct.
 | MaxClockSkew   | 5 minutes      | 5 minutes   | Évite replay attacks             |
 | MaxTokenSize   | 48000 octets   | 48000       | Support Kerberos + SID History   |
 
-
-# 🚀 Via GPO: Computer Config > Policies > Windows Settings > Security Settings >
-
-# 🚀 Local Policies > Security Options > Network security: Configure encryption types
-
-# 🚀 Décocher: DES_CBC_CRC, DES_CBC_MD5
-
-# 🚀 Via registre (si GPO impossible):
-
-# 🚀 0x18 = 0x08 (AES128) + 0x10 (AES256)
-
-# 🚀 Via GPO:
-
-# 🚀 Ajouter comptes sensibles au groupe Protected Users:
-
-# 🚀 - Force AES256
-
-# 🚀 - Désactive RC4, DES, NTLM
-
-# 🚀 - Limite durée de vie TGT à 4 heures (non-renouvelable)
 
 ## Recommandations Détaillées
 
@@ -307,6 +307,14 @@ Event Log Kerberos       | 3 erreur(s) recente(s)   | 0 erreurs        | Avertis
 
 Pour questions ou support: contact@ayinedjimi-consultants.com
 
+
+- --
+
+<div align="center">
+
+**⭐ Si ce projet vous plaît, n'oubliez pas de lui donner une étoile ! ⭐**
+
+</div>
 
 ---
 
