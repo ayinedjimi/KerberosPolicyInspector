@@ -113,16 +113,6 @@ KerberosPolicyInspector.exe
 - Levels: Error (2) et Warning (3)
 
 
-## Logging
-
-Les logs sont stockés dans:
-```
-%TEMP%\WinTools_KerberosPolicyInspector_log.txt
-```
-
-Format: Timestamp + message texte avec valeurs détectées
-
-
 # 🚀 Via GPO: Computer Config > Policies > Windows Settings > Security Settings >
 
 # 🚀 Local Policies > Security Options > Network security: Configure encryption types
@@ -142,6 +132,16 @@ Format: Timestamp + message texte avec valeurs détectées
 # 🚀 - Désactive RC4, DES, NTLM
 
 # 🚀 - Limite durée de vie TGT à 4 heures (non-renouvelable)
+
+## Logging
+
+Les logs sont stockés dans:
+```
+%TEMP%\WinTools_KerberosPolicyInspector_log.txt
+```
+
+Format: Timestamp + message texte avec valeurs détectées
+
 
 ## 🚀 Cas d'Usage
 
@@ -307,6 +307,14 @@ Event Log Kerberos       | 3 erreur(s) recente(s)   | 0 erreurs        | Avertis
 
 Pour questions ou support: contact@ayinedjimi-consultants.com
 
+
+- --
+
+<div align="center">
+
+**⭐ Si ce projet vous plaît, n'oubliez pas de lui donner une étoile ! ⭐**
+
+</div>
 
 - --
 
