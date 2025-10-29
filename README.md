@@ -90,6 +90,26 @@ KerberosPolicyInspector.exe
 - **Notes** : Description et alertes
 
 
+# 🚀 Via GPO: Computer Config > Policies > Windows Settings > Security Settings >
+
+# 🚀 Local Policies > Security Options > Network security: Configure encryption types
+
+# 🚀 Décocher: DES_CBC_CRC, DES_CBC_MD5
+
+# 🚀 Via registre (si GPO impossible):
+
+# 🚀 0x18 = 0x08 (AES128) + 0x10 (AES256)
+
+# 🚀 Via GPO:
+
+# 🚀 Ajouter comptes sensibles au groupe Protected Users:
+
+# 🚀 - Force AES256
+
+# 🚀 - Désactive RC4, DES, NTLM
+
+# 🚀 - Limite durée de vie TGT à 4 heures (non-renouvelable)
+
 ## Architecture Technique
 
 ### APIs Utilisées
@@ -112,26 +132,6 @@ KerberosPolicyInspector.exe
 - Provider: **Microsoft-Windows-Security-Kerberos**
 - Levels: Error (2) et Warning (3)
 
-
-# 🚀 Via GPO: Computer Config > Policies > Windows Settings > Security Settings >
-
-# 🚀 Local Policies > Security Options > Network security: Configure encryption types
-
-# 🚀 Décocher: DES_CBC_CRC, DES_CBC_MD5
-
-# 🚀 Via registre (si GPO impossible):
-
-# 🚀 0x18 = 0x08 (AES128) + 0x10 (AES256)
-
-# 🚀 Via GPO:
-
-# 🚀 Ajouter comptes sensibles au groupe Protected Users:
-
-# 🚀 - Force AES256
-
-# 🚀 - Désactive RC4, DES, NTLM
-
-# 🚀 - Limite durée de vie TGT à 4 heures (non-renouvelable)
 
 ## Logging
 
@@ -307,6 +307,14 @@ Event Log Kerberos       | 3 erreur(s) recente(s)   | 0 erreurs        | Avertis
 
 Pour questions ou support: contact@ayinedjimi-consultants.com
 
+
+- --
+
+<div align="center">
+
+**⭐ Si ce projet vous plaît, n'oubliez pas de lui donner une étoile ! ⭐**
+
+</div>
 
 - --
 
